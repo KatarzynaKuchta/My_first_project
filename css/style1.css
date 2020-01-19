@@ -331,6 +331,7 @@ header {
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
 .rectangle {
     width: 90%;
     height: 100%;
@@ -342,6 +343,7 @@ header {
     padding-bottom: 3%;
     align-items: center;
 }
+
 .rectangle1 {
     flex-direction: column-reverse;
     padding-top: 7%;
@@ -358,16 +360,19 @@ header {
     padding-bottom: 1%;
     padding-left: 3%;
 }
+
 .text3Part {
     background: white;
     padding-bottom: 1%;
 }
+
 .articleTitle {
     font-size: 2rem;
     padding-bottom: 8%;
     padding-top: 2%;
     font-weight: 500;
 }
+
 .articleTitle2 {
     padding-top: 6%;
     padding-bottom: 5%;
@@ -377,9 +382,11 @@ header {
     line-height: 0;
     padding-bottom: 12%;
 }
+
 .text {
 line-height: 1.2;
 }
+
 .picturePart {
     display: flex;
     position: relative;
@@ -389,6 +396,7 @@ line-height: 1.2;
     position: relative;
     padding: 3%;
 }  
+
 .picture3Part {
     display: flex;
     width: 100%;
@@ -396,6 +404,7 @@ line-height: 1.2;
     position: relative;
     justify-content: flex-end;
 }
+
 .picture {
     width: 230px;
     height: 184px;
@@ -409,12 +418,14 @@ line-height: 1.2;
 .picture2 {
     background-image: url(../assets/iPhone.png);
 }
+
 .picture3 {
     background-image: url(../assets/Trumpet.png);
     height: 215px;
     margin-top: 8%;
     width: 100%;
 }
+
 .shape1 {
     width: 94px;
     height: 123px;
@@ -427,6 +438,7 @@ line-height: 1.2;
     background: #FB3B64;
     margin-top: 10px;
 }
+
 .shape2 {
     width: 177px;
     height: 177px;
@@ -438,12 +450,14 @@ line-height: 1.2;
     border-radius: 50%;
     margin-top: 0;
 }
+
 .line {
     width: 82%;
     margin-top: 5%;
     background: #fb3b64;
     border: none;   
 }
+
 .line2 {
     background: #08A6E4;
     margin-top: 9%;
@@ -1171,6 +1185,7 @@ input[type="checkbox"]:checked + label span {
 }
 
 /* footer */
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -1200,7 +1215,7 @@ footer {
     padding-bottom: 3%;
 }
 .socialMedia {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
 }
 .twitter {
