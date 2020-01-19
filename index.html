@@ -285,13 +285,13 @@
             <div class="sendPart">
                 <form>
                     <label class="formText">Name
-                        <input type="text" name="username">
+                        <input required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ /-]+" title="Can not contain digits or special characters." type="text" name="username">
                     </label>
                     <label class="formText">Email
-                        <input type="text" name="userEmail">
+                        <input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="userEmail">
                     </label>
                     <label class="agreement">
-                        <input id="c1" type="checkbox" name="agreement" checked>
+                        <input id="c1" type="checkbox" name="agreement" required checked>
                         <label for="c1">
                             <span></span>
                             <p class='agreementText'> I hereby agree to the processing of personal data provided in this
@@ -305,7 +305,7 @@
                                 of the Council of 27 April 2016 on the protection of natural persons with regard to the
                                 processing of personal data and on the free movement of such data, and repealing
                                 Directive
-                                95/46/EC (General Data Protection Regulation)
+                                95/46/EC (General Data Protection Regulation).
                             </p>
                         </label>
                     </label>

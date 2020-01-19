@@ -139,4 +139,3 @@ terminalCheckbox.addEventListener('click', function (e) {
         totalPriceSum.innerText = parseFloat(priceForAccounting.innerText) + parseFloat(priceForPackage.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForTerminal.innerText) + '$';
     }
 });
-
