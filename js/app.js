@@ -139,3 +139,19 @@ terminalCheckbox.addEventListener('click', function (e) {
         totalPriceSum.innerText = parseFloat(priceForAccounting.innerText) + parseFloat(priceForPackage.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForTerminal.innerText) + '$';
     }
 });
+
+
+productsQuantity.addEventListener('blur', function () {
+    if ((isNaN(productsQuantity.value) === true) || productsQuantity.value == '' || productsQuantity.value < 0 || !Number.isInteger(Number(productsQuantity.value))) {
+        productsQuantity.value = 0
+  
+    }
+})
+
+orders.addEventListener('blur', function () {
+    if ((isNaN(orders.value) === true) || orders.value == '' || orders.value < 0 || !Number.isInteger(Number(orders.value))) {
+        orders.value = 0
+  
+    }
+})
+
