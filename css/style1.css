@@ -385,8 +385,6 @@ header {
 
 .textPart {
     width: 90%;
-    /* padding-bottom: 1%;
-    padding-left: 3%; */
     text-align: justify;
 }
 
@@ -493,7 +491,6 @@ header {
 
 .line2 {
     background: #08A6E4;
-    /* margin-top: 9%; */
 }
 
 .line3 {
@@ -509,13 +506,9 @@ header {
 }
 
 .pictureBox1{
-    /* height: 220px;
-    width: 253px; */
     position: relative;
     display:flex
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+
 }
     
 @media(min-width:389px){
@@ -539,7 +532,6 @@ header {
         padding-bottom: 0;
         margin-bottom: 36px;
         width: 90%
-
     }
 
     .rectangle1, .rectangle2 {
@@ -552,26 +544,16 @@ header {
     
     .textPart {
         width: 50%;
-        /* padding-bottom: 3%;
-        padding-left: 0; */
-        /* border: 1px solid; */
         padding:4%;
         position:relative;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
 
     }
 
-/* 
-    .textPart1, .text3Part{
-        margin-right: 3%;
-    } */
-    
     .text3Part {
         width: 50%;
-        /* padding-left: 3%; */
-        /* padding-bottom: 10px; */
+       
     }
     .articleTitle {
         font-size: 1.8rem;
@@ -584,7 +566,6 @@ header {
     
     .articleTitle2 {
         padding-top: 0;
-        /* padding-bottom: 0; */
         font-weight: bold;
     }
     
@@ -596,10 +577,8 @@ header {
     }
 
     .picturePart{
-        /* border: 1px solid; */
         justify-content: center;
         align-items: center;
-        /* width: 253px; */
         width: 50%;
     }
 
@@ -613,13 +592,9 @@ header {
     }
     .picture2Part {
         padding:0;
-        /* margin-top:15px; */
-        /* margin-right: 3%; */
         justify-content: center;
         align-items: center;
-        /* width: 253px; */
         width: 50%;
-        /* border: 1px solid; */
     }
     
     .picture3Part {
@@ -641,7 +616,6 @@ header {
     .picture2{
         width: 256px;
         height: 210px;
-        /* border: 1px solid; */
     }
    
     .picture3 {
@@ -664,8 +638,7 @@ header {
         height: 190px;
         left: auto;
         bottom: auto;
-        /* left: 4px;
-        bottom: 12px; */
+      
     }
     
     .line {
@@ -709,135 +682,6 @@ header {
     }
     
 }
-
-
-/* @media (min-width:901px) {
-    .section3 {
-        padding-top: 21px;
-        padding-bottom: 23px;
-    }
-    
-    .rectangle {
-        width: 70%;
-        height:auto;
-        flex-direction: row;
-        align-items: normal;
-        padding-left:2%;
-    }
-
-    .rectangle1 {
-        padding-top: 0;
-    }
-
-    .rectangle2 {
-        padding-bottom: 0;
-        padding-top:0;
-    }
-    
-    .rectangle3 {
-        padding-bottom: 0;
-    }
-    
-    .textPart {
-        width: 50%;
-        padding-bottom: 3%;
-        padding-left: 0;
-    }
-    
-    .text3Part {
-        width: 50%;
-        padding-left: 3%;
-        padding-bottom: 7%;
-    }
-
-    .articleTitle {
-        font-size: 1.8rem;
-        padding-bottom: 6%;
-        padding-top: 10%;
-        font-weight: bold;
-        
-    }
-    
-    .articleTitle2 {
-        padding-top: 6%;
-        padding-bottom: 5%;
-        font-weight: bold;
-    }
-    
-    .articleTitle2Part2 {
-        font-size: 1.8rem;
-        padding-bottom: 12%;
-        font-weight: bold;
-    }
-
-    .picture2Part {
-        width: 49%;
-        padding:0;
-    }
-    
-    .picture3Part {
-        width: 60%;
-        height:auto;
-    }
-    
-    .picture {
-        width: 88%;
-        height: auto;
-        margin-top:0;
-    } 
-    .picture1 {
-        height: 153px;
-        width: 315px;
-        margin-top: 48px;
-    }
-    .picture2 {
-        height: 258px;
-        margin-top: 0;
-        width: 279px;
-        margin-left: 0;
-    }
-    
-    .picture3 {
-        height: 100%;
-        margin-top: 6%;
-        width: 100%;
-    }
-    
-    .shape1 {
-        width: 127px;
-        height: 106px;
-        right: 15px;
-        bottom: 66px;
-        margin-top:0;
-    }
-    
-    .shape2 {
-        width: 232px;
-        height: 232px;
-        left: -7px;
-        bottom: 12px;
-        margin-top: 10px;
-    }
-    
-    .line {
-        margin-top: 44px;
-        height: 3px;
-    }
-    
-    .line2 {
-        margin-top: 44px;
-    }
-    
-    .line3 {
-        margin-top: 44px;
-        width: 69%;
-    }
-    
-    .pictureBox {
-        width: 91%;
-        height: 100%;
-    }
-} */
 
 /* section 4 */
 
@@ -1179,7 +1023,6 @@ header {
     width: 100%;
     display: flex;
     color: #A5A5A5;
-    /* padding-top: 4%; */
     padding-bottom: 18px;
     flex-direction:column;
     font-size: 18px;
@@ -1317,7 +1160,6 @@ input[type="checkbox"] + label span {
 input[type="checkbox"]:checked + label span {
     display: inline-block;
     border: 1px solid grey;
-    /* margin-right: 10px; */
     vertical-align: middle;
     background: url(../assets/Checkmark.svg) no-repeat;
     cursor: pointer;
@@ -1372,19 +1214,16 @@ input[type="checkbox"]:checked + label span {
     }
 
     .sendPart {
-        /* margin-top:65px; */
         width: 40%;
     }
 
     .questionsPart > p:nth-child(2) {
         padding-top: 36px;
         padding-right: 6%;
-        /* font-size: 18px */
     }
     .dataContainer {
         flex-direction: row;
         padding-top: 0;
-        /* font-size:18px */
     }
     .messagePicture {
         margin-right: 2px;
@@ -1471,13 +1310,11 @@ footer {
     vertical-align: text-bottom;
 }
 
-
 @media (min-width: 950px) {
     footer {
         padding-top: 1%;
         padding-left: 136px;
         padding-right: 136px;
-        /* margin-top: 121px; */
     }
 
     .footerLogoPart p:nth-child(2){
@@ -1495,7 +1332,6 @@ footer {
         height: 24px;
     }
 }
-
 
 /* section calculator */
 
@@ -1521,7 +1357,6 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* margin-left:10px;   */
     margin-right: 35px;
     margin-bottom: 47px;
     padding-left:8%;
@@ -1575,7 +1410,6 @@ option {
     border: 2px dashed red;
 }
 .partOfPrice {
-    /* height:31px; */
     width: 100%;
     background: #55DFB4 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -1620,7 +1454,6 @@ option {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem; 
 }
-
 
 @media(min-width: 650px) {
     .calculator {
