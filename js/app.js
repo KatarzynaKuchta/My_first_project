@@ -1,7 +1,6 @@
 // menu
 
 const hamburger = document.querySelector('.hamburger');
-console.log(hamburger);
 const navList2 = document.querySelector('.navList2');
 
 hamburger.addEventListener('click', function() {
@@ -39,16 +38,20 @@ totalPriceSum.innerText = '0$';
 priceForProducts.innerText = '0$';
 ['change', 'keyup'].forEach(function (e) {
     productsQuantity.addEventListener(e, function () {
-        if ((isNaN(productsQuantity.value) === false) & productsQuantity.value != '' & productsQuantity.value >= 0 & Number.isInteger(Number(productsQuantity.value))) {
+        if ((isNaN(productsQuantity.value) === false) & productsQuantity.value != '' & productsQuantity.value > 0 & Number.isInteger(Number(productsQuantity.value))) {
             countingProductPrice.innerText = productsQuantity.value + ' * 0.5$';
             priceForProducts.innerText = productsQuantity.value * 0.5 + '$';
             productsPriceArea.style.display = 'flex';
-            totalPricePart.style.display = 'flex';
             totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForPackage.innerText) + '$';
+            totalPricePart.style.display = 'flex';
+            
         } else {
             productsPriceArea.style.display = 'none';
             priceForProducts.innerText = "0$";
             totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForPackage.innerText) + '$';
+            if(totalPriceSum.innerText == '0$'){
+                totalPricePart.style.display = 'none';
+            }
         }
     })
 });
@@ -56,17 +59,21 @@ priceForProducts.innerText = '0$';
 priceForOrders.innerText = "0$";
 ['change', 'keyup'].forEach(function (e) {
     orders.addEventListener(e, function () {
-        if (orders.value != '' & orders.value >= 0 & Number.isInteger(Number(orders.value))) {
+        if (orders.value != '' & orders.value > 0 & Number.isInteger(Number(orders.value))) {
             countingOrdersPrice.innerText = orders.value + ' * 0.5$';
             priceForOrders.innerText = orders.value * 0.5 + '$';
             ordersPriceArea.style.display = 'flex';
             totalPricePart.style.display = 'flex';
             totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForPackage.innerText) + '$';
         } else {
-            priceForOrders.innerText = "0$";
             ordersPriceArea.style.display = 'none';
+            priceForOrders.innerText = "0$";
             totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + parseFloat(priceForPackage.innerText) + '$';
+            if(totalPriceSum.innerText == '0$'){
+                totalPricePart.style.display = 'none';
+            }
         }
+
     })
 
 });
@@ -116,6 +123,9 @@ accountingCheckbox.addEventListener('click', function (e) {
         priceForAccounting.innerText = '0$';
         accountingPriceArea.style.display = 'none';
         totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForPackage.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + '$';
+        if(totalPriceSum.innerText == '0$'){
+            totalPricePart.style.display = 'none';
+        }
     }
     else if (accountingCheckbox.checked) {
         priceForAccounting.innerText = '35$';
@@ -131,6 +141,9 @@ terminalCheckbox.addEventListener('click', function (e) {
         priceForTerminal.innerText = '0$';
         terminalPriceArea.style.display = 'none';
         totalPriceSum.innerText = parseFloat(priceForTerminal.innerText) + parseFloat(priceForAccounting.innerText) + parseFloat(priceForPackage.innerText) + parseFloat(priceForProducts.innerText) + parseFloat(priceForOrders.innerText) + '$';
+        if(totalPriceSum.innerText == '0$'){
+            totalPricePart.style.display = 'none';
+        }
     }
     else {
         priceForTerminal.innerText = '5$';
@@ -142,16 +155,15 @@ terminalCheckbox.addEventListener('click', function (e) {
 
 
 productsQuantity.addEventListener('blur', function () {
-    if ((isNaN(productsQuantity.value) === true) || productsQuantity.value == '' || productsQuantity.value < 0 || !Number.isInteger(Number(productsQuantity.value))) {
-        productsQuantity.value = 0
+    if ((isNaN(productsQuantity.value) === true) || productsQuantity.value == '' || productsQuantity.value <= 0 || !Number.isInteger(Number(productsQuantity.value))) {
+        productsQuantity.value = ''
   
     }
 })
 
 orders.addEventListener('blur', function () {
-    if ((isNaN(orders.value) === true) || orders.value == '' || orders.value < 0 || !Number.isInteger(Number(orders.value))) {
-        orders.value = 0
-  
+    if ((isNaN(orders.value) === true) || orders.value == '' || orders.value <= 0 || !Number.isInteger(Number(orders.value))) {
+        orders.value = ''
     }
 })
 

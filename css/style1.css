@@ -88,10 +88,10 @@ header {
 
 .navListElement{
     display: inline;
-    padding-left: 23px;
+    padding-left: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size:0.9rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 3.28px;
     color: #000000;
@@ -226,11 +226,11 @@ header {
 /* section 2 */
 
 .section2 {
-    padding-bottom: 8%;
+    padding-bottom: 47px;
 }
 
 .parSection2 {
-    padding-top: 41px;
+    padding-top: 77px;
     text-align: center;
     font-size: 1.8rem;
     font-family: 'Raleway', sans-serif;
@@ -239,7 +239,7 @@ header {
     line-height: 1.2;
 }
 .listOfIcons {
-    padding-top: 7%;
+    padding-top: 55px;
     justify-content: space-evenly;
 }
 .icon1 {
@@ -300,7 +300,7 @@ header {
     transform: translate(26px);
 }
 .number {
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -309,9 +309,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 28px;
+    font-size: 18px;
 }
+
 .liColumn li {
-    margin-bottom: 4%;
+    margin-bottom: 9px;
 }
 
 
@@ -348,8 +351,8 @@ header {
     align-items: center;
     justify-content: center;
     background: #F7F7F7 0% 0% no-repeat padding-box;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 43px;
+    padding-bottom: 43px;
 }
 
 .rectangle {
@@ -362,23 +365,29 @@ header {
     margin: 2%;
     padding-bottom: 3%;
     align-items: center;
+    margin-bottom: 43px;
 }
 
 .rectangle1 {
     flex-direction: column-reverse;
-    padding-top: 7%;
+    padding-top: 35px;
+    padding-bottom: 45px;
 }
 
 .rectangle2 {
-    padding-top: 7%;
+    padding-top: 35px;
+    padding-bottom: 45px;
 }
 .rectangle3 {
-    padding-bottom: 0;
+    padding-top: 35px;
+    padding-bottom: 45px;
 }
+
 .textPart {
     width: 90%;
-    padding-bottom: 1%;
-    padding-left: 3%;
+    /* padding-bottom: 1%;
+    padding-left: 3%; */
+    text-align: justify;
 }
 
 .text3Part {
@@ -390,7 +399,10 @@ header {
     font-size: 2rem;
     padding-bottom: 8%;
     padding-top: 2%;
-    font-weight: 500;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 12%;
+    line-height: 1.2;
 }
 
 .articleTitle2 {
@@ -404,7 +416,8 @@ header {
 }
 
 .text {
-    line-height: 1.4;
+    line-height: 1.5;
+    font-size: 17px
 }
 
 .picturePart {
@@ -480,7 +493,7 @@ header {
 
 .line2 {
     background: #08A6E4;
-    margin-top: 9%;
+    /* margin-top: 9%; */
 }
 
 .line3 {
@@ -492,106 +505,213 @@ header {
     width: 100%;
     z-index: 2;
     background-color: turquoise;
+    margin:2%
+}
+
+.pictureBox1{
+    /* height: 220px;
+    width: 253px; */
+    position: relative;
+    display:flex
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
     
-@media (min-width:621px) and (max-width:900px) {
+@media(min-width:389px){
+    .rectangle{
+        width: 350px;
+        font-size:18px
+
+    }
+}
+
+@media (min-width:621px){
+    .section3{
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
     .rectangle {
         flex-direction: row;
         align-items: normal;
+        justify-content: space-evenly;
+        padding-bottom: 0;
+        margin-bottom: 36px;
+        width: 90%
+
     }
 
     .rectangle1, .rectangle2 {
         padding-top: 0;
     }
-    
-    .textPart {
-        width: 41%;
-        padding-bottom: 3%;
-        padding-left: 0;
+
+    .rectangle3{
+        padding-top: 0;
     }
     
+    .textPart {
+        width: 50%;
+        /* padding-bottom: 3%;
+        padding-left: 0; */
+        /* border: 1px solid; */
+        padding:4%;
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+
+    }
+
+/* 
+    .textPart1, .text3Part{
+        margin-right: 3%;
+    } */
+    
     .text3Part {
-        width: 62%;
-        padding-left: 3%;
-        padding-bottom: 7%;
+        width: 50%;
+        /* padding-left: 3%; */
+        /* padding-bottom: 10px; */
     }
     .articleTitle {
         font-size: 1.8rem;
         padding-bottom: 6%;
-        padding-top: 10%;
+        padding-top: 0;
         font-weight: bold;
+        line-height: 1.2;
+        
     }
     
     .articleTitle2 {
-        padding-top: 6%;
-        padding-bottom: 5%;
+        padding-top: 0;
+        /* padding-bottom: 0; */
         font-weight: bold;
     }
     
     .articleTitle2Part2 {
         font-size: 1.8rem;
-        line-height: 0;
-        padding-bottom: 12%;
+        line-height: 1.2;
+        padding-bottom: 7%;
         font-weight: bold;
     }
 
+    .picturePart{
+        /* border: 1px solid; */
+        justify-content: center;
+        align-items: center;
+        /* width: 253px; */
+        width: 50%;
+    }
+
+    .pictureBox1{
+        height: 220px;
+        width: 253px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .picture2Part {
         padding:0;
-        margin-top:15px;
+        /* margin-top:15px; */
+        /* margin-right: 3%; */
+        justify-content: center;
+        align-items: center;
+        /* width: 253px; */
+        width: 50%;
+        /* border: 1px solid; */
     }
     
     .picture3Part {
-        width: 60%;
+        width: 50%;
         height:auto;
     }
     .picture {
         width: 240px;
         height:auto;
         margin-top:0;
+        
     }
     .picture1 {
         width: 253px;
-        height: 79%;
-        margin-top: 42px;
+        height: 141px;
+        margin-top: 0;
+    }
+
+    .picture2{
+        width: 256px;
+        height: 210px;
+        /* border: 1px solid; */
     }
    
     .picture3 {
+        margin:0;
         height: 100%;
         margin-top: 6%;
         width: 100%;
+       
     }
     .shape1 {
         width: 107px;
         height: 106px;
-        right: 8px;
-        top: 17px;
+        right: 10px;
+        top: 21px;
+        z-index: 0;
     }
     
     .shape2 {
         width: 190px;
         height: 190px;
-        left: 4px;
-        bottom: 12px;
+        left: auto;
+        bottom: auto;
+        /* left: 4px;
+        bottom: 12px; */
     }
     
     .line {
-        margin-top: 44px;
+        width:98%;
+        margin:28px 0;
         height: 3px;
+        margin-bottom: 19px;
+        
     }
-    .line2 {
-        margin-top: 44px;
-    }
-    
-    .line3 {
-        margin-top: 44px;
-    }
-    
+
     .pictureBox {
-        width: 91%;
-        height: 100%;
+        width: 100%;
+        height: auto;
+        margin:0
     }
 }
-@media (min-width:901px) {
+
+@media(min-width:750px){
+    .rectangle{
+        width:80%
+    }
+}
+
+@media(min-width:880px){
+    .rectangle{
+        width:72%
+    }
+}
+
+@media(min-width: 1051px) {
+    .rectangle{
+        width: 70%
+    }
+
+    .textPart {
+        padding: 6%
+    }
+
+    .line {
+        margin-bottom: 6px;
+    }
+    
+}
+
+
+/* @media (min-width:901px) {
     .section3 {
         padding-top: 21px;
         padding-bottom: 23px;
@@ -619,16 +739,17 @@ header {
     }
     
     .textPart {
-        width: 41%;
+        width: 50%;
         padding-bottom: 3%;
         padding-left: 0;
     }
     
     .text3Part {
-        width: 62%;
+        width: 50%;
         padding-left: 3%;
         padding-bottom: 7%;
     }
+
     .articleTitle {
         font-size: 1.8rem;
         padding-bottom: 6%;
@@ -716,7 +837,7 @@ header {
         width: 91%;
         height: 100%;
     }
-}
+} */
 
 /* section 4 */
 
@@ -780,7 +901,7 @@ header {
 }
 
 .packetTitle {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding-top: 21%;
     padding-bottom: 2%;
@@ -815,13 +936,13 @@ header {
 
 .option span {
     display: inline-block;
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     margin: -2px 10px 0 0;
     flex-shrink:0;
     vertical-align: middle;
     background: url(../assets/Ckechmark-1.svg) no-repeat;
-    background-size: 19px 19px;
+    background-size: 100%;
 }
 
 .optionNo span {
@@ -879,6 +1000,12 @@ header {
     }
 }
 
+@media(min-width:480px) {
+    .option{
+        font-size: 1.3rem;
+    }
+}
+
 
 @media(min-width:600px){
     .packet {
@@ -900,7 +1027,7 @@ header {
         padding-top: 58px;
         font-weight: bold;
     }
-    
+
     
     .partPrice {
         width: 81%;
@@ -923,7 +1050,7 @@ header {
     }
     
     .limited {
-        font-size: .75rem;
+        font-size: .9rem;
         font-weight: bold;
     }
     
@@ -996,6 +1123,7 @@ header {
     .option {
         padding-bottom: 10px;
         display:flex;
+        font-size: 1.2rem;
     }
     
     .packetTitle {
@@ -1008,6 +1136,12 @@ header {
 @media(min-width:1050px){
     .packetsContainer{
         width: 81%;
+    }
+}
+
+@media(min-width:1100px){
+    .option {
+        font-size: 1.3rem;
     }
 }
 
@@ -1037,21 +1171,24 @@ header {
     font-weight: 600;
 }
 .questionsPart > p:nth-child(2) {
-    padding-top:16px;
+    padding-top:34px;
+    margin-bottom: -2px;
 }
+
 .dataContainer {
     width: 100%;
     display: flex;
     color: #A5A5A5;
-    padding-top: 4%;
-    padding-bottom: 6%;
+    /* padding-top: 4%; */
+    padding-bottom: 18px;
     flex-direction:column;
+    font-size: 18px;
 }
 .mail {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 7px;
-    margin-top: 8px;
+    margin-bottom: 1px;
+    margin-top: 12px;
 }
 .phone {
     display: flex;
@@ -1092,19 +1229,18 @@ header {
 label {
     display:block;
 }
+
 input[type="text"],input[type="email"] {
     width:100%;
 }
 
 .agreement {
     font-size: 0.85rem;
-    padding-top: 5%;
-    margin-bottom: 19px;
+    padding-top: 20px;
+    margin-bottom: 28px;
+    text-align: justify
 }
 
-.agreement p:first-of-type {
-    padding-right:5%;
-}
 
 .formText {
     text-align: left;
@@ -1113,18 +1249,20 @@ input[type="text"],input[type="email"] {
     color: #08A6E4;
     opacity: 1;
     text-transform: uppercase;
+    font-size: 0.8rem
 }
 
 .formText:nth-child(2){
     margin-top: 11px;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 }
 
 input[type="text"],input[type="email"] {
-    font-size: 1.2rem;
+    font-size: 19px;
     border:none;
     border-bottom: 1px solid #95989A;
     opacity: 1;
+    height: 33px
 }
 
 input[type="submit"] {
@@ -1160,7 +1298,7 @@ input[type="checkbox"] {
 }
 .agreementText {
     line-height: 1.2;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 input[type="checkbox"] + label span {
@@ -1168,23 +1306,52 @@ input[type="checkbox"] + label span {
     border: 1px solid grey;
     width: 22px;
     height: 22px;
-    margin-right: 2%;
+    margin-right: 8px;
     vertical-align: middle;
     cursor: pointer;
     border-radius: 5px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label span {
     display: inline-block;
     border: 1px solid grey;
-    margin-right: 2%;
+    /* margin-right: 10px; */
     vertical-align: middle;
     background: url(../assets/Checkmark.svg) no-repeat;
     cursor: pointer;
     background-size: 80% 80%;
     background-position: center;
 }
+
+@media(min-width: 550px) {
+    .section5 {
+        align-items: center;
+    }
+
+    .questionsPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dataContainer {
+        align-items: center;
+        font-size: 18px;
+    }
+
+    
+    .questionsPart > p:nth-child(2) {
+        font-size: 18px;
+    }
+
+    .sendPart {
+        width:78%
+    }
+
+}
+
 
 
 @media (min-width:880px) {
@@ -1194,21 +1361,30 @@ input[type="checkbox"]:checked + label span {
         padding-left: 0;
         padding-right: 0;
         margin-top: 65px;
+        justify-content: center;
+        align-items: baseline;
     }
+
     .questionsPart {
-        width:32%;
+        width:40%;
+        margin-right: 35px;
+        align-items: baseline
     }
+
     .sendPart {
-        width: 34%;
+        /* margin-top:65px; */
+        width: 40%;
     }
 
     .questionsPart > p:nth-child(2) {
-        padding-top:6%;
+        padding-top: 36px;
         padding-right: 6%;
+        /* font-size: 18px */
     }
     .dataContainer {
         flex-direction: row;
-        padding-top: 7%;
+        padding-top: 0;
+        /* font-size:18px */
     }
     .messagePicture {
         margin-right: 2px;
@@ -1227,7 +1403,7 @@ input[type="checkbox"]:checked + label span {
     }
 
     input[type="text"],input[type="email"] {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 2.2rem;
       
     }
@@ -1250,12 +1426,12 @@ footer {
     align-items: center;
     width: 100%;
     max-width: 1352px;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 15px;
     opacity: 1;
     box-shadow: 0px -5px 40px #00000029;
-    margin-top: 100px;
+    margin-top: 133px;
     background: #F7F7F7 0% 0% no-repeat padding-box;
     padding-left: 15px;
 }
@@ -1301,7 +1477,7 @@ footer {
         padding-top: 1%;
         padding-left: 136px;
         padding-right: 136px;
-        margin-top: 121px;
+        /* margin-top: 121px; */
     }
 
     .footerLogoPart p:nth-child(2){
@@ -1324,15 +1500,15 @@ footer {
 /* section calculator */
 
 .calculator {
-    margin-top: 22px;
-    margin-bottom: 50px;
+    margin-top: 29px;
+    margin-bottom: 61px;
 
 }
 .calculatorTitle {
     font-size: 2rem;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 42px;
+    margin-bottom: 56px;
     padding-left: 8%;
     padding-right: 8%;
     line-height: 1.2;
@@ -1345,16 +1521,16 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left:10px;  
+    /* margin-left:10px;   */
     margin-right: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 47px;
     padding-left:8%;
     padding-right:8%;
 }
 
 
 .calcArea {
-    height: 40px;
+    padding:8px;
     box-shadow: 0px 3px 6px #08A6E429;
     border: 1px solid #08A6E4;
     border-radius: 6px;
@@ -1362,12 +1538,14 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     padding-left:20px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
     letter-spacing: 0;
     color: #A5A5A5;
 }
+
 option {
     color: black;
+
 }
 
 .calculatorPart1 label {
@@ -1376,8 +1554,10 @@ option {
     letter-spacing: 0;
     color: #707070;
     opacity: 1;
-    margin-bottom: 7px;
+    margin-bottom: 1px;
+    margin-top: 7px;
 }
+
 .terminalText {
     display:inline-block;
 }
@@ -1395,7 +1575,7 @@ option {
     border: 2px dashed red;
 }
 .partOfPrice {
-    height:31px;
+    /* height:31px; */
     width: 100%;
     background: #55DFB4 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -1404,7 +1584,7 @@ option {
     color:white;
     display:flex;
     justify-content: space-between;
-    padding:6px;
+    padding:11px;
     padding-right:20px;
     padding-left:20px;
     margin-bottom: 6px;
@@ -1440,18 +1620,51 @@ option {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem; 
 }
-@media (min-width: 850px) {
+
+
+@media(min-width: 650px) {
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculatorTitle {
+        width: 78%
+    }
+
+    .calculatorBody {
+        width: 78%
+    }
+}
+
+@media (min-width: 804px) {
     .calculator {
         margin-top: 112px;
     }
+} 
+
+@media (min-width: 850px) {
+    .calculator {
+        align-items: baseline;
+    }
+
+    .calculatorTitle {
+        width:100%
+    }
+
+
     .calculatorBody {
         display: flex;
         justify-content: center;
+        width:100%
     }
+
     .calculatorPart1{
         width: 40%;
         padding-left: 0;
         padding-right: 0;
+        margin-left: 0;
     }
     .calculatorPart2 {
         width: 40%;
